@@ -1,4 +1,6 @@
-﻿Control.WriteLine("Enter your number ");
-string input = Console.ReadLine();
+﻿string input = Console.ReadLine();
 
 int i = int.Parse(input);
+int square = i * i;
+
+Console.WriteLine(square);
