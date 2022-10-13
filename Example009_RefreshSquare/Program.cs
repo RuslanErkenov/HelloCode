@@ -1,14 +1,7 @@
-﻿Console.WriteLine("Enter a ");
-string a = Console.ReadLine();
+﻿int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Enter b ");
-string b = Console.ReadLine();
-
-if(a == b*b)
-{
-    Console.WriteLine("Yes");
-}
+if (a == b * b)
+    Console.WriteLine(true);
 else
-{
-    Console.WriteLine("No");
-}
+    Console.WriteLine(false);
