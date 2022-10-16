@@ -1,13 +1,19 @@
 ﻿// На входе число, а на выходе все четные от 1 до числа на входе
-//Console.Write("Enter number: ");
-//int num = int.Parse(Console.ReadLine());
-Console.Write("Write number 1: ");
+
+Console.Write("Write your number: ");
 int n = int.Parse(Console.ReadLine());
-for (int number = 1; number < 21; number++)
-{
-    if (number % 3 == 0)
-        {
-            sum = sum + number;
+
+if (n > 0){
+    for (int i = 1; i <= n; i++){
+        if (i % 2 == 0){
+            Console.WriteLine(i);
         }
     }
-    Console.WriteLine($"The sum is {sum}");
+} else if (n < 0){
+    for (int i = 1; i >= n; i--){
+        if (i % 2 == 0 && i != 0){
+            Console.WriteLine(i);
+        }
+    }
+}
+
