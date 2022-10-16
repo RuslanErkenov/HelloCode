@@ -1,12 +1,21 @@
 ﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-//Console.Write("Enter number: ");
-//string num = Console.ReadLine();
 
-//if (num [0] = - );
-//Console.WriteLine("Third digit: " + num[3]);
-//else if (num [0] != -);
-//Console.WriteLine("Third digit: " + num[2]);
-int num = ReadInt("Enter number: ");
+
+Console.Write("Enter number: ");
+int n = int.Parse(Console.ReadLine());
+if (n > 99){
+   Console.WriteLine(n>99 ? n.ToString()[2] : '-');
+}
+else if (n < -99){
+   Console.WriteLine(n<-99 ? n.ToString()[3] : '-');
+}   
+else{
+   Console.WriteLine("We have not three and more digit((");
+}
+
+
+
+/*int num = ReadInt("Enter number: ");
 int count = num.ToString().Length;
 Console.Write(MakeArray(num, count));
 
@@ -38,4 +47,4 @@ int result = 0;
         result = (a / c) % 10;
     }
 return result;
-}
+} */
