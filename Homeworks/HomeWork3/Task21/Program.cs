@@ -16,6 +16,8 @@ int [] array3 = new int [] {x3,y3};
 
 
 
-double result = Math.Cbrt(Math.Pow (array1[0] - array2[0],2) + Math.Pow (array1[1] - array2[1],2) + Math.Pow (array3[0] - array3[0],2));
+double result = Math.Cbrt(Math.Pow (array1[0] - array2[0],2) 
+                + Math.Pow (array1[1] - array2[1],2) 
+                + Math.Pow (array3[0] - array3[0],2));
 
 System.Console.WriteLine($"Result is {result}");

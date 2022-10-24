@@ -47,14 +47,14 @@ Console.WriteLine(year); */
 
 // 4 группа
 
-string Method4(int count, string c);
+string Method4(int count, string c)
 {
     int i = 0;
     string result = String.Empty;
 
       while (i < count)
       {
-        result = result + text;
+        result = result + c;
         i++;
       }
       return result;
