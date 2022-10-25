@@ -160,9 +160,9 @@ void PrintArray(int[,] array)
            Console.Write($"{array[i,j]} ");
         }
        Console.WriteLine();
-    } 
-    
+    }  
 }
+
 int[,] array = GetArray(m,n); 
 PrintArray(array);
 Console.WriteLine();
