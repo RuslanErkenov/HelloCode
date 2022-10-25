@@ -6,9 +6,10 @@ double[] CreateArray(int size)
 {
 	double[] array = new double[size];
         Console.Write("Массив [");
+        Random rnd = new Random();
     	for (int i = 0; i < array.Length; i++)
 	{
-		array[i] = new Random().Next(-5, 5);
+		array[i] = Math.Round(rnd.Next(-100, 100) + rnd.NextDouble(), 2);
         Console.Write($"{array[i]}  ");
 	}
     Console.Write("]");
@@ -42,4 +43,4 @@ double FindMax(double[] array)
 
 double[] array = CreateArray(10);
 Console.WriteLine();
-Console.WriteLine($"Разница между max и min: " + (FindMax(array) - FindMin(array)));
+Console.WriteLine($"Разница между max и min: " + (Math.Round((FindMax(array) - FindMin(array)), 2)));
