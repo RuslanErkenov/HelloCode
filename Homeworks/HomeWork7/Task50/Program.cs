@@ -59,7 +59,7 @@ void FindNumber(int[,] array)
 }
 
 int[,] array = GetArray(10,10); 
-PrintArray(array);
+PrintArray(array); 
 
 FindNumber(array);
 
